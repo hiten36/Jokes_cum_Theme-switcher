@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    height: 100%;
+}
+body{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #5cdb95;
+    color: black;
+    height: 100%;
+}
+.main1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #272727;
+    color: white;
+    height: 100%;
+}
+.box{
+    background-color: #edf5e1;
+    padding: 2rem 5rem;
+    position: relative;
+    box-shadow: 0 0 11px rgba(33,33,33,.5); 
+    border-radius: 7px;
+    font-size: 20px;
+}
+.box1{
+    background-color: #008f56;
+    padding: 2rem 5rem;
+    position: relative;
+    box-shadow: 0 0 11px rgba(204, 204, 204, 0.2); 
+    border-radius: 7px;
+    font-size: 20px;
+}
+.theme{
+    position: absolute;
+    top: 1rem;
+    right: 2rem;
+    text-align: center;
+}
+.text{
+    width: 20rem;
+    margin: 2rem auto;
+    padding-top: 1rem;
+}
+.fetch{
+    background-color: #1a1a1d;
+    color: #ff43f6;
+    outline: none;
+    border: none;
+    padding: 7px 20px;
+    border-radius: 5px;
+    font-size: 20px;
+    transition: transform 0.1s;
+    cursor: pointer;
+}
+.fetch1{
+    background-color: #ff44f6;
+    color: #151516;
+    outline: none;
+    border: none;
+    padding: 7px 20px;
+    border-radius: 5px;
+    font-size: 20px;
+    transition: transform 0.1s;
+    cursor: pointer;
+}
+.fetch:hover{
+    box-shadow: 0 0 2pt 3pt #ff43f6;
+}
+.fetch1:hover{
+    box-shadow: 0 0 2pt 2pt #151516;
+}
+.fetch:active{
+    transform: scale(0.95);
+}
+.fetch1:active{
+    transform: scale(0.95);
+}
+.theme-box{
+    width: 3.6rem;
+    height: 1.2rem;
+    border: 2px solid black;
+    border-radius: 25px;
+    position: relative;
+    cursor: pointer;
+}
+.theme-box1{
+    width: 3.6rem;
+    height: 1.2rem;
+    border: 2px solid white;
+    border-radius: 25px;
+    position: relative;
+    cursor: pointer;
+}
+.dot{
+    position: absolute;
+    width: 1.6rem;
+    top: 0px;
+    left: 0px;
+    height: 1.1877rem;
+    border-radius: 25px;
+    background-color: blue;
+}
+.dot1{
+    position: absolute;
+    width: 1.6rem;
+    top: 0px;
+    left: 0px;
+    height: 1.1877rem;
+    border-radius: 25px;
+    background-color: rgb(248, 30, 30);
+}
+.theme h4{
+    margin-top: 5px;
+}
+.ani{
+    animation: dot_ani 0.1s linear;
+}
+.ani1{
+    animation: dot_ani1 0.1s linear;
+}
+@keyframes dot_ani {
+    0%{
+        left: 0px;
+    }
+    100%{
+        left: 32px;
+    }
+}
+@keyframes dot_ani1 {
+    0%{
+        left: 32px;
+    }
+    100%{
+        left: 0px;
+    }
+}
